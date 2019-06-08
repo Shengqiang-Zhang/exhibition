@@ -9,15 +9,15 @@
             <view class="location">北京市朝阳区北京电影学院东朗产业园区</view>
             <view class="nav_list">
                 <navigator open-type="navigate" url="/pages/map_1">
-                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <image class="nav_icon" src="../images/go_here.png"></image>
                     <view class="go_here">到这去</view>
                 </navigator>
                 <navigator open-type="navigate" url="/pages/map_1">
-                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <image class="nav_icon" src="../images/icon_map.png"></image>
                     <view class="go_here">活动地图</view>
                 </navigator>
                 <navigator open-type="navigate" url="/pages/activity_detail_1">
-                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <image class="nav_icon" src="../images/icon_activity_detail.png"></image>
                     <view class="go_here">活动详情</view>
                 </navigator>
             </view>
@@ -31,15 +31,15 @@
             <view class="location">福建省福州市仓山区海峡国际会展中心1号馆</view>
             <view class="nav_list">
                 <navigator open-type="navigate" url="/pages/map_2">
-                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <image class="nav_icon" src="../images/go_here.png"></image>
                     <view class="go_here">到这去</view>
                 </navigator>
-                <navigator open-type="navigate" url="/pages/map_1">
-                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                <navigator open-type="navigate" url="/pages/map_2">
+                    <image class="nav_icon" src="../images/icon_map.png"></image>
                     <view class="go_here">活动地图</view>
                 </navigator>
                 <navigator open-type="navigate" url="/pages/map_1">
-                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <image class="nav_icon" src="../images/icon_activity_detail.png"></image>
                     <view class="go_here">活动详情</view>
                 </navigator>
             </view>
@@ -53,15 +53,15 @@
             <view class="location">北京市朝阳区中国国际展览中心三元桥静安庄</view>
             <view class="nav_list">
                 <navigator open-type="navigate" url="/pages/map_3">
-                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <image class="nav_icon" src="../images/go_here.png"></image>
                     <view class="go_here">到这去</view>
                 </navigator>
-                <navigator open-type="navigate" url="/pages/map_1">
-                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                <navigator open-type="navigate" url="/pages/map_3">
+                    <image class="nav_icon" src="../images/icon_map.png"></image>
                     <view class="go_here">活动地图</view>
                 </navigator>
                 <navigator open-type="navigate" url="/pages/map_1">
-                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <image class="nav_icon" src="../images/icon_activity_detail.png"></image>
                     <view class="go_here">活动详情</view>
                 </navigator>
             </view>

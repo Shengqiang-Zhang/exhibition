@@ -34,7 +34,7 @@
       }],
       controls: [{
         id: 1,
-        iconPath: '../images/地图 (1).png',
+        iconPath: '../images/icon_map.png',
         position: {
           left: 0,
           top: 300 - 50,
