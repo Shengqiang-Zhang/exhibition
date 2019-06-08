@@ -1,0 +1,209 @@
+<template>
+    <view class="activity_list">
+        <view class="single_activity">
+            <view class="title">随意听风阁·国风集市-北京站</view>
+            <view class="image">
+                <image class="cover" src="../images/activity_1.jpeg" mode="widthFix"></image>
+            </view>
+            <view class="time">2019年6月22日</view>
+            <view class="location">北京市朝阳区北京电影学院东朗产业园区</view>
+            <view class="nav_list">
+                <navigator open-type="navigate" url="/pages/map_1">
+                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <view class="go_here">到这去</view>
+                </navigator>
+                <navigator open-type="navigate" url="/pages/map_1">
+                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <view class="go_here">活动地图</view>
+                </navigator>
+                <navigator open-type="navigate" url="/pages/map_1">
+                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <view class="go_here">活动详情</view>
+                </navigator>
+            </view>
+        </view>
+        <view class="single_activity">
+            <view class="title">2019第八届福州FACG动漫游戏文化节></view>
+            <view class="image">
+                <image class="cover" src="../images/activity_2.jpeg" mode="widthFix"></image>
+            </view>
+            <view class="time">2019年6月29日</view>
+            <view class="location">福建省福州市仓山区海峡国际会展中心1号馆</view>
+            <view class="nav_list">
+                <navigator open-type="navigate" url="/pages/map_2">
+                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <view class="go_here">到这去</view>
+                </navigator>
+                <navigator open-type="navigate" url="/pages/map_1">
+                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <view class="go_here">活动地图</view>
+                </navigator>
+                <navigator open-type="navigate" url="/pages/map_1">
+                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <view class="go_here">活动详情</view>
+                </navigator>
+            </view>
+        </view>
+        <view class="single_activity">
+            <view class="title">第二届IDO全球动漫精品大展</view>
+            <view class="image">
+                <image class="cover" src="../images/activity_3.jpeg" mode="widthFix"></image>
+            </view>
+            <view class="time">2019年7月18日</view>
+            <view class="location">北京市朝阳区中国国际展览中心三元桥静安庄</view>
+            <view class="nav_list">
+                <navigator open-type="navigate" url="/pages/map_3">
+                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <view class="go_here">到这去</view>
+                </navigator>
+                <navigator open-type="navigate" url="/pages/map_1">
+                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <view class="go_here">活动地图</view>
+                </navigator>
+                <navigator open-type="navigate" url="/pages/map_1">
+                    <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
+                    <view class="go_here">活动详情</view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy';
+    import Tab from '@/components/tab';
+
+    export default class ActivitiesList extends wepy.page {
+        config = {
+            navigationBarTitleText: '活动专区',
+        }
+        components = {
+            tab: Tab,
+        }
+    }
+</script>
+
+<style lang="less">
+    // @formatter:off
+  .activity_list {
+    border-top: 1px solid #efefef;
+    background: #fff;
+    padding: 33px 20rpx;
+    margin-top: 10rpx;
+
+    .single_activity {
+      border-style: solid;
+      border-width: 2px;
+      text-align: center;
+      /*display: flex;*/
+      justify-content: center;
+      font-family: "Century Schoolbook";
+
+    }
+
+    .cover {
+      width: 200rpx;
+      height: 500rpx;
+    }
+
+    .image {
+      float: left;
+      width: 40%;
+    }
+
+    .intro {
+      float: right;
+      width: 60%;
+    }
+
+    .time_location {
+      font-size: 28rpx;
+      text-align: center;
+      display: flex;
+    }
+
+    .go_here {
+      /*border-style: solid;*/
+      /*border-width: 1px;*/
+      text-align: center;
+      float: center;
+    }
+
+    .head_bc {
+      height: 460rpx;
+      width: 100%;
+      position: absolute;
+    }
+
+    .title {
+      font-size: 36rpx;
+      text-align: center;
+      font-weight: bold;
+      font-family: "楷体", Consolas;
+      margin-bottom: 50rpx;
+    }
+
+    .time {
+      font-size: 28rpx;
+    }
+
+    .loation {
+      font-size: 28rpx;
+    }
+
+    .jf_jz_title {
+      color: #9999ff;
+      font-size: 30rpx;
+      padding-top: 56rpx;
+      display: block;
+    }
+
+    .jf_content {
+      text-align: center;
+      font-size: 30rpx;
+
+      .sec_title {
+        color: #666;
+        padding-top: 40rpx;
+      }
+
+      .jf_ins {
+        color: #999;
+        padding-top: 30rpx;
+      }
+    }
+  }
+
+  .nav_list {
+    color: #404040;
+    display: flex;
+    font-size: 26rpx;
+    justify-content: space-between;
+    padding: 17rpx 50rpx;
+
+    navigator {
+      text-align: center
+    }
+
+    .nav_icon {
+      height: 50rpx;
+      /*margin: 0 auto;*/
+      width: 50rpx;
+      /*margin-bottom: 14 rpx;*/
+    }
+
+    .nav_text {
+      font-size: 26rpx
+    }
+  }
+
+  .recommend-title {
+    padding: 40rpx 0;
+    text-align: center;
+    color: #333;
+  }
+
+  // @formatter:on
+</style>
+
+

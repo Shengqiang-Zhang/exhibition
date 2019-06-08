@@ -1,0 +1,60 @@
+<template>
+  <map bindupdated="click" id="map" latitude="39.758810" longitude="116.356720"
+       markers="{{markers}}" scale="18" style="width: 100%; height: 300px;">
+  </map>
+</template>
+
+<script>
+  import wepy from 'wepy';
+  export default class Map extends wepy.page{
+    config = {
+      navigationBarTitleText: "到这去",
+    }
+
+    data = {
+      markers: [{
+        iconPath: '../images/map-marker-alt.png',
+        id: 0,
+        latitude: 39.75861437,
+        longitude: 116.3558386,
+        width: 50,
+        height: 50
+      }],
+      polyline: [{
+        points: [{
+          longitude: 116.356666,
+          latitude: 39.7592
+        }, {
+          longitude: 116.3558386,
+          latitude: 39.75861437
+        }],
+        color: '#FFFFFF',
+        width: 2,
+        dottedLine: true
+      }],
+      controls: [{
+        id: 1,
+        iconPath: '../images/地图 (1).png',
+        position: {
+          left: 0,
+          top: 300 - 50,
+          width: 50,
+          height: 50
+        },
+        clickable: true
+      }]
+    }
+
+    methods = {
+      click(){
+        wx.openLocation({
+          latitude: 39.906677,
+          longitude: 116.473682,
+          scale: 16, // 缩放级别
+          name: "北京电影学院东郎电影创意产业园",
+          address: "中国北京市朝阳区大望路现代城西路"
+        })
+      }
+    }
+  }
+</script>

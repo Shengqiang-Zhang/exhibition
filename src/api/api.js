@@ -21,6 +21,7 @@ const user2session = (params) => wxRequest(params, apiMall + "/api/wechat/user2s
 //首页发现商品接口
 const hostGoodsList = (params) => wxRequest(params, apiMall + '/api/home/hostGoodsList');
 const getHomeDisvocerList = (params) => wxRequest(params, apiMall + '/api/mall/discoverList');
+// const getHomeDisvocerList = (params) => wxRequest(params, animation);
 //查询商品列表
 const getGoodsList = (params) => wxRequest(params, apiMall + '/api/mall/searchGoodsList');
 
