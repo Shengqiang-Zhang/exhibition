@@ -1,4 +1,13 @@
 <template>
+    <view class="activity_introduction">
+        <view class="title">随意听风阁·国风集市-北京站</view>
+        <view class="image">
+            <image class="cover" src="../images/activity_1.jpeg" mode="widthFix"></image>
+        </view>
+        <view class="time">时间：2019-06-22 10:00 - 2019-06-23 17:00</view>
+        <view class="location">地点：北京市朝阳区北京电影学院东朗产业园区</view>
+        <view class="price">票价：￥30起</view>
+    </view>
     <view class="sgin_in">
         <!--tab模块-->
         <view class="tab_box">
@@ -8,7 +17,7 @@
             <!-- 积分规则 -->
             <activityIntro1 wx:if="{{currentTab==0}}"></activityIntro1>
             <!-- 积分记录 -->
-            <pointsDetail :is_empty.sync="is_empty" :list.sync="signList" wx:if="{{currentTab==1}}"></pointsDetail>
+            <activityRecom1 :is_empty.sync="is_empty" :list.sync="signList" wx:if="{{currentTab==1}}"></activityRecom1>
         </scroll-view>
     </view>
 </template>
@@ -22,24 +31,24 @@
         SYSTEM_INFO,
         USER_SPECICAL_INFO
     } from '@/utils/constant';
-    import PointsDetail from '@/components/points_detail'
+    import ActivityRecom1 from '@/components/activity_recom_1'
     import ActivityIntro1 from '@/components/activity_intro_1'
     import WepySignTime from '@/components/common/wepy-sign-time';
 
     export default class ActivityDetail1 extends wepy.page {
         config = {
-            navigationBarTitleText: '签到有礼',
+            navigationBarTitleText: '活动详情',
         }
         components = {
             tab: Tab,
-            pointsDetail: PointsDetail,
+            activityRecom1: ActivityRecom1,
             activityIntro1: ActivityIntro1,
             wepySignTime: WepySignTime
         }
         data = {
             currentTab: 0,
             winHeight: 0,
-            tabList: ["积分规则", "获得记录"],
+            tabList: ["活动介绍", "推荐活动"],
             signed: false,
             score: 0,
             conDays: 0,
@@ -138,6 +147,25 @@
 </script>
 
 <style lang="less">
+
+    .activity_introduction{
+        text-align: center;
+    }
+    .title {
+        font-size: 50rpx;
+        text-align: center;
+        font-weight: bold;
+        font-family: "楷体", Consolas;
+        margin-bottom: 50rpx;
+    }
+
+    .time {
+        font-size: 28rpx;
+    }
+
+    .loation {
+        font-size: 28rpx;
+    }
     .sgin_in {
         position: relative;
     }
@@ -229,7 +257,7 @@
 
     .tab_box {
         background: #fff;
-        padding: 0 120 rpx;
+        padding: 0 120rpx;
     }
 
     .line-box {

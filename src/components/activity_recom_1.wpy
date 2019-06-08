@@ -1,0 +1,32 @@
+<template>
+    <view class="activity_recom">
+        <view class="title">推荐活动</view>
+        <view class="recom">这儿的一切都很好玩哦</view>
+    </view>
+</template>
+
+<script>
+    import wepy from 'wepy'
+
+    export default class ActivityRecom1 extends wepy.component {
+
+
+    }
+</script>
+
+<style lang="less">
+    // @formatter:off
+    .activity_recom {
+        border-top: 1px solid #efefef;
+        background: #fff;
+        padding: 33px 20rpx;
+        margin-top: 10rpx;
+
+        .title {
+            font-size: 36rpx;
+        }
+
+    }
+
+    // @formatter:on
+</style>

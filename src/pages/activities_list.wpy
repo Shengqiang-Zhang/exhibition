@@ -16,7 +16,7 @@
                     <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
                     <view class="go_here">活动地图</view>
                 </navigator>
-                <navigator open-type="navigate" url="/pages/map_1">
+                <navigator open-type="navigate" url="/pages/activity_detail_1">
                     <image class="nav_icon" src="../images/icon_nav_01_new.png"></image>
                     <view class="go_here">活动详情</view>
                 </navigator>
@@ -147,7 +147,7 @@
       font-size: 28rpx;
     }
 
-    .loation {
+    .location {
       font-size: 28rpx;
     }
 
