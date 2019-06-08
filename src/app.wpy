@@ -46,6 +46,7 @@
                 'pages/activity_detail_1',
                 'pages/map_2',
                 'pages/map_3',
+                'pages/activities_map',
             ],
             window: {
                 backgroundTextStyle: 'dark',
@@ -67,8 +68,8 @@
                     "iconPath": "images/icon_home.png",
                     "selectedIconPath": "images/icon_home_active.png"
                 }, {
-                    "pagePath": "pages/classify",
-                    "text": "分类",
+                    "pagePath": "pages/activities_map",
+                    "text": "活动地图",
                     "iconPath": "images/icon_classify.png",
                     "selectedIconPath": "images/icon_classify_active.png"
                 }, {
