@@ -7,9 +7,18 @@
 ### 开发实时编译。
 	npm run dev
 
+### 编译
+    wepy build --watch
+
 ### 生产压缩
 	npm run build //上传代码时，请先执行此命令，否则会提示包体积过大
 
+### 编译可能遇到的问题
+1. 若遇到错误：找不到编译器：wepy-compiler-less，可以尝试
+```
+    npm install less 
+    npm install wepy-compiler-less
+   ``` 
 
 ### 开发使用说明(重要)
 
@@ -20,6 +29,8 @@
 3、微信开发者工具-->项目-->关闭上传代码时样式自动补全。  <font color=red>重要：某些情况下漏掉此项也会运行报错。</font> 
 
 4、微信开发者工具-->项目-->关闭代码压缩上传。  <font color=red>重要：开启后，会导致真机computed, props.sync 等等属性失效。</font> 
+
+5、开启“不校验合法域名、web-view（业务域名）、TLS 版本以及 HTTPS 证书”选项
 
 
 
@@ -121,25 +132,6 @@
 
 
 
-
-### 部分功能截图
-
-
-<img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG263.jpeg" width="365" height="619" /> 	<img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG264.jpeg" width="365" height="619"/> 
-
-
-<img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG265.jpeg" width="365" height="619"/> 		<img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG266.jpeg" width="365" height="619"/> 
-
-<img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG267.jpeg" width="365" height="619"/>		 <img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG268.jpeg" width="365" height="619"/> 
-
-<img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG269.jpeg" width="365" height="619"/>		 <img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG270.jpeg" width="365" height="619"/> 
-
-
-<img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG271.jpeg" width="365" height="619"/>		 <img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG272.jpeg" width="365" height="619"/> 
-
-<img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG273.jpeg" width="365" height="619"/>		 <img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG274.jpeg" width="365" height="619"/> 
-
-<img src="https://github.com/dyq086/wxYuHanStore/blob/master/screenshots/WechatIMG275.jpeg" width="365" height="619"/> 
 
 
 
