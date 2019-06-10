@@ -41,8 +41,17 @@
                 <view class="nav_text">我要发布</view>
             </navigator>
         </view>
+        <view class="bottom_image">
+            <image src="../images/zggjdmj.png" mode="widthFix"></image>
+        </view>
+        <view class="bottom_image">
+            <image src="../images/facg.jpg" mode="widthFix"></image>
+        </view>
+        <view class="bottom_image">
+            <image src="../images/ccgjdmysblh.jpeg" mode="widthFix"></image>
+        </view>
         <!--发现好商品模块-->
-        <discover :list.sync="discoverList"></discover>
+<!--        <discover :list.sync="discoverList"></discover>-->
         <!--加载更多时动画-->
         <bottomLoadMore :show.sync="showLoading" message="正在加载"></bottomLoadMore>
         <!--暂无数据显示-->
@@ -202,6 +211,9 @@
         height: 80%;
     }
 
+    .bottom_image{
+        margin-left: 50rpx;
+    }
     .swiper {
         height: 348rpx;
     }
